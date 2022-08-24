@@ -409,6 +409,11 @@ h3.my-profession{
     color: var(--text-black-900);
 }
 .portfolio .portfolio-item{
+    flex: 0 0 50%;
+    max-width: 100%;
+    margin-bottom: 30px;
+}
+.portfolio .portfolio-item1{
     flex: 0 0 100%;
     max-width: 100%;
     margin-bottom: 30px;
@@ -419,10 +424,19 @@ h3.my-profession{
     overflow: hidden;
     cursor: pointer;
 }
-.portfolio .portfolio-item-inner .portfolio-img img{
-    width: 100%;
+.portfolio .portfolio-item-inner .container .portfolio-img {
+
     display: block;
-}
+    
+    height: auto;
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+  }
+
+
+
+
 /* Contact */
 .contact-title{
     color: var(--skin-color);
@@ -437,10 +451,10 @@ h3.my-profession{
     text-align: center;
     margin-bottom: 60px;
 }
-.contact-info-item .icon{
+.contact-info-item .icon3{
     display: inline-block;
 }
-.contact-info-item .icon .fa{
+.contact-info-item .icon3 .fa{
     font-size: 25px;
     color: var(--skin-color);
 }
@@ -531,6 +545,62 @@ h3.my-profession{
     width: 100%;
     display: block;
 }
+.containerx {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .containerx:hover .image {
+    opacity: 0.3;
+  }
+  .containerx:hover .overlay {
+    opacity: 1;
+  }
+  
+  .icon {
+    color: var(--skin-color);
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+
+    font-size: 25px;
+    white-space: nowrap;
+    
+
+    
+  }
+
+  
+  .fa-user:hover {
+    color: #eee;
+  }
+  
+
+
+
+
+
 @media (max-width: 1199px) {    
     .aside{
         left: -270px;
